@@ -73,7 +73,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div className={styles.textCenter}>
-      <StaticImage
+      {/* <StaticImage
         src="../images/example.png"
         loading="eager"
         width={64}
@@ -81,11 +81,14 @@ const IndexPage = () => (
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
-      />
+      /> */}
       <h1>
-        Welcome to <b>Gatsby!</b>
+        Bellavista pa' cuando
       </h1>
-      <p className={styles.intro}>
+      <p>
+        En construcción
+      </p>
+      {/* <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
@@ -95,9 +98,9 @@ const IndexPage = () => (
         ))}
         <br />
         Edit <code>src/pages/index.js</code> to update this page.
-      </p>
+      </p> */}
     </div>
-    <ul className={styles.list}>
+    {/* <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
           <a
@@ -109,13 +112,13 @@ const IndexPage = () => (
           <p className={styles.listItemDescription}>{link.description}</p>
         </li>
       ))}
-    </ul>
-    {moreLinks.map((link, i) => (
+    </ul> */}
+    {/* {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}${utmParameters}`}>{link.text}</a>
         {i !== moreLinks.length - 1 && <> · </>}
       </React.Fragment>
-    ))}
+    ))} */}
   </Layout>
 )
 
