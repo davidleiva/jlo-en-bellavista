@@ -71,8 +71,47 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
-    <div className={styles.textCenter}>
+    <Seo title="Jennifer Lopez en Bellavista" />
+      <div 
+        className="container"
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between'
+        }}
+      >
+        <div className="content">
+          <h1>Jennifer López: <br />¿Se ha mudado a Bellavista?</h1>
+     
+        <div>
+          <h3>ESTÁ GRABANDO NUEVO SENCILLO</h3>
+          <p>Dicen que se mudó en busca de inspiración</p>
+        </div>
+    
+        <div>
+        <h3>EXCLUSIVA: <br />Habrá presentación de su nuevo single</h3>
+        <div>
+          <img src="" />
+          <ul>
+          <li>Será en una cena en el “Bar Libra” (Provença 29)</li>
+          <li>Viernes 30 Septiembre 21:00 hh</li>
+        </ul>
+        </div>
+
+        </div>
+        </div>
+        
+        <form
+          style={{ 
+            background: 'white', padding: '16px',
+          }}
+        >
+          <p><label for="nombre">Tu nombre completo</label><input name="nombre" type="text" /></p>
+          <p><label for="phone">Tu teléfono</label><input name="phone" type="phone" /></p>
+          <p><button type="submit">Reservar Mesa</button></p>
+        </form>
+      </div>
+        {/* <div>
+      {/*   className={styles.textCenter} */}
       {/* <StaticImage
         src="../images/example.png"
         loading="eager"
@@ -82,12 +121,7 @@ const IndexPage = () => (
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       /> */}
-      <h1>
-        Bellavista pa' cuando
-      </h1>
-      <p>
-        En construcción
-      </p>
+
       {/* <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
@@ -99,7 +133,7 @@ const IndexPage = () => (
         <br />
         Edit <code>src/pages/index.js</code> to update this page.
       </p> */}
-    </div>
+    {/* </div> */}
     {/* <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
