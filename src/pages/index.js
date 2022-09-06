@@ -74,85 +74,32 @@ const IndexPage = () => (
     <Seo title="Jennifer Lopez en Bellavista" />
       <div 
         className="container"
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between'
-        }}
       >
-        <div className="content">
-          <h1>Jennifer López: <br />¿Se ha mudado a Bellavista?</h1>
-     
-        <div>
-          <h3>ESTÁ GRABANDO NUEVO SENCILLO</h3>
-          <p>Dicen que se mudó en busca de inspiración</p>
-        </div>
-    
-        <div>
-        <h3>EXCLUSIVA: <br />Habrá presentación de su nuevo single</h3>
-        <div>
-          <img src="" />
-          <ul>
-          <li>Será en una cena en el “Bar Libra” (Provença 29)</li>
-          <li>Viernes 30 Septiembre 21:00 hh</li>
-        </ul>
-        </div>
-
-        </div>
-        </div>
-        
-        <form
-          style={{ 
-            background: 'white', padding: '16px',
-          }}
+        <div
+          style={{ display: 'flex' }}
         >
-          <p><label for="nombre">Tu nombre completo</label><input name="nombre" type="text" /></p>
-          <p><label for="phone">Tu teléfono</label><input name="phone" type="phone" /></p>
-          <p><button type="submit">Reservar Mesa</button></p>
-        </form>
-      </div>
-        {/* <div>
-      {/*   className={styles.textCenter} */}
-      {/* <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      /> */}
+          <h1 
+            style={{ color: 'white', textShadow: '0 4px 4px #000' }}
+          >Jennifer López: <br />¿Se ha mudado a Bellavista?</h1>
+          <div>video container</div>
+        </div>
 
-      {/* <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
+        <div style={{ backgroundColor: '#fde000', padding: '16px', display: 'inline-block', marginBottom: '20px' }}>
+          <h3 style={{ margin: 0 }}>ESTÁ GRABANDO <span style={{ color: '#eb0084' }}>NUEVO DISCO</span></h3>
+          <p>Dicen que <span style={{ color: '#eb0084' }}>se mudó en busca de inspiración</span></p>
+        </div>
+
         <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p> */}
-    {/* </div> */}
-    {/* <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul> */}
-    {/* {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))} */}
+        
+        <div style={{ backgroundColor: '#356732', color: 'white', padding: '16px', display: 'inline-block' }}>
+          <h3 style={{ margin: 0 }}>EXCLUSIVA: <br />¡Habrá presentación de su nuevo single!</h3>
+          <div>
+            <img src="" />
+            <p>Domingo 2 Octubre<br />16:00hh · Bar Libra <br />( Provença 29 )</p>
+          </div>
+        </div>
+
+      </div>
   </Layout>
 )
 
