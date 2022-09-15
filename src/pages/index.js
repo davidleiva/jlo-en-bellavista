@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import libraImg from './../images/2x/libra@2x-8.png'
 import JLO from './../images/2x/JLO@2x-8.png'
+import JLOS from './../images/2x/JLOS@2x-8.png'
+import VECINA from './../images/2x/VECINA@2x-8.png'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -71,6 +73,27 @@ const IndexPage = () => (
           bottom: 0,
           right: 0,
           height: '75vh'
+        }}
+      />
+
+      <img 
+        src={ JLOS } 
+        style={{
+          position: 'fixed',
+          bottom: 0,
+          left: 0,
+          bottom: '15vh',
+          width: '22vw'
+        }}
+      />
+
+      <img 
+        src={ VECINA } 
+        style={{
+          position: 'fixed',
+          top: '-4vh',
+          right: 0,
+          width: '22vw'
         }}
       />
 
